@@ -1,0 +1,10 @@
+DigSegTime  KEYWORD1
+brightness  KEYWORD2
+scan    KEYWORD2
+print   KEYWORD2
+printHr KEYWORD2
+printMin    KEYWORD2
+printTime   KEYWORD2
+printDp KEYWORD2
+printChange KEYWORD2
+
