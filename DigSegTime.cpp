@@ -45,7 +45,7 @@ DigSegTime::DigSegTime(boolean mode, uint8_t seg1_pin, uint8_t seg2_pin,
 
 	clean();
 
-	brightness_ = 1;
+	brightness_ = 10;
 }
 
 void DigSegTime::brightness(uint8_t brightness) {
@@ -202,7 +202,7 @@ void DigSegTime::printTime(const String &s1, const String &s2) {
 /**
 *	显示几个点数
 *	dpNumber 点数 0 ~ 3;
-
+*/
 void DigSegTime::printDp(uint8_t dpNumber) {
 	switch(dpNumber){
 		case 1:	//显示一个点
@@ -222,9 +222,8 @@ void DigSegTime::printDp(uint8_t dpNumber) {
 			lights[1][7] = false;
 	}
 }
-*/
 
-/** 某某产的4位数码管得用这个才能正确显示几个点*/
+/** 某某产的4位数码管得用这个才能正确显示几个点
 void DigSegTime::printDp(uint8_t dpNumber) {
 	switch(dpNumber){
 		case 1:
@@ -244,6 +243,7 @@ void DigSegTime::printDp(uint8_t dpNumber) {
 			lights[3][7] = false;
 	}
 }
+*/
 
 /**
 *	把 numberCode_ 字符数组 转换成须显示的高低电平状态  lights[][];
